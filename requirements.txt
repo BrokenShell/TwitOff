@@ -1,0 +1,10 @@
+flask
+jinja2
+tweepy
+psycopg2-binary
+flask-sqlalchemy
+gunicorn
+scikit-learn
+python-dotenv
+spacy
+numpy
