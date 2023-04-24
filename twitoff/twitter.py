@@ -6,7 +6,6 @@ import spacy
 
 from twitoff.models import DB, Tweet, User
 
-# https://greatist.com/happiness/must-follow-twitter-accounts
 TWITTER_USERS = ('calebhicks', 'elonmusk', 'rrherr', 'SteveMartinToGo',
                  'alyankovic', 'NASA', 'jkhowland', 'Austen',
                  'common_squirrel', 'KenJennings', 'ConanOBrien',
@@ -15,7 +14,6 @@ TWITTER_AUTH = tweepy.OAuth1UserHandler(getenv('TWITTER_API_KEY'),
                                         getenv('TWITTER_API_SECRET'))
 TWITTER = tweepy.API(TWITTER_AUTH)
 
-# loading in nlp model and returning 300 size embedding
 nlp = spacy.load('en_core_web_sm')
 
 
